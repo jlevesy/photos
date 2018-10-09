@@ -1,4 +1,4 @@
-baseURL = "https://photos.julienlevesy.net/"
+baseURL = "https://jlevesy.github.io/photos/"
 languageCode = "en-us"
 title = "Photos"
 theme = "phugo"
