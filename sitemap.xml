@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://photos.julienlevesy.net/suramerica/</loc>
+    <lastmod>2018-10-09T11:34:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://photos.julienlevesy.net/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://photos.julienlevesy.net/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://photos.julienlevesy.net/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
