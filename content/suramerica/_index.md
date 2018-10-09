@@ -25,4 +25,3 @@ albumthumb: "suramerica/thumb/37605972630_2898cfe5a7_o.jpg"
 {{< photo full="full/38082807805_08c3096a9d_o.jpg" thumb="thumb/38082807805_08c3096a9d_o.jpg" alt="" phototitle="El Chalten." description="Argentina.">}}
 
 {{< photo full="full/38253182074_f3d115d877_o.jpg" thumb="thumb/38253182074_f3d115d877_o.jpg" alt="" phototitle="Ruta de los 7 lagos." description="Argentina.">}}
-
