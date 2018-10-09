@@ -1,8 +1,8 @@
 
 DIST_DIR := ./_dist
 IMPORT_DIR := ./import
-THUMBS_DIR := ./static/image/thumb
-FULL_DIR := ./static/image/full
+THUMBS_DIR := ./content/$(NAME)/thumb
+FULL_DIR := ./content/$(NAME)/full
 
 CONVERT := convert
 FULL_SIZE := 1200x1200
@@ -16,19 +16,22 @@ FULL_OUTPUTS_PNG := $(patsubst $(IMPORT_DIR)/%.png,$(FULL_DIR)/%.png,$(IMPORTED_
 THUMBS_OUTPUTS_JPG := $(patsubst $(IMPORT_DIR)/%.jpg, $(THUMBS_DIR)/%.png,$(IMPORTED_FILES_JPG))
 FULL_OUTPUTS_JPG := $(patsubst $(IMPORT_DIR)/%.jpg, $(FULL_DIR)/%.png,$(IMPORTED_FILES_JPG))
 
+.PHONY: dev
+dev:
+	@hugo serve
+
 .PHONY: build
 build:
 	@hugo -d $(DIST_DIR)
 
 .PHONY: clean
 clean:
-	@rm -rf $(DIST_DIR)
+	@rm -rf $(DIST_DIR)/*
 
 .PHONY: deploy
-deploy: build
+deploy: clean build
 	cd $(DIST_DIR) && git add --all && git commit -m "Deploying to gh-pages"
 	git push origin gh-pages
-
 
 .PHONY: setup_worktree
 setup_worktree:
@@ -46,7 +49,12 @@ check_input_variable:
 check_name_variable:
 	@test $(NAME)
 
-import: $(THUMBS_OUTPUTS_JPG) $(THUMBS_OUTPUTS_PNG) $(FULL_OUTPUTS_JPG) $(FULL_OUTPUTS_PNG)
+import: check_name_variable create_output_dirs $(THUMBS_OUTPUTS_JPG) $(THUMBS_OUTPUTS_PNG) $(FULL_OUTPUTS_JPG) $(FULL_OUTPUTS_PNG)
+
+.PHONY: create_output_dirs
+create_output_dirs:
+	@mkdir -p $(THUMBS_DIR)
+	@mkdir -p $(FULL_DIR)
 
 $(THUMBS_DIR)/%.png: $(IMPORT_DIR)/%.png
 	@echo Generating thumb png to png $@ $<
