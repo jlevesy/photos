@@ -1,0 +1,32 @@
+baseURL = "https://photos.julienlevesy.net/"
+languageCode = "en-us"
+title = "Photos"
+theme = "phugo"
+
+[params]
+  name = "Julien Levesy"
+
+  [[params.header.links]]
+  name = "About"
+  url = "#footer"
+  icon = "fa-info-circle"
+
+  [params.footer.paragraph]
+  headline = "Hello, I'm Julien."
+  text = "I'm an thirty-ish years old software engineer, which also happens to love photography. Here are the latest pictures I wanted to share. Enjoy !"
+
+  [params.footer.contact]
+  hide = true
+
+  [params.footer.social]
+  headline = "Contact me !"
+
+  [[params.footer.social.links]]
+  label = "Twitter"
+  url = "https://twitter.com/jlevesy"
+  icon = "fa-twitter"
+
+  [[params.footer.social.links]]
+  label = "Github"
+  url = "https://github.com/jlevesy"
+  icon = "fa-github"
