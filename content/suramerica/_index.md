@@ -6,7 +6,7 @@ albumthumb: "suramerica/thumb/37605972630_2898cfe5a7_o.jpg"
 
 {{< photo full="full/37605972630_2898cfe5a7_o.jpg" thumb="thumb/37605972630_2898cfe5a7_o.jpg" alt="" phototitle="Buenos Aires." description="Argentina.">}}
 {{< photo full="full/25211878577_642a9ac958_o.jpg" thumb="thumb/25211878577_642a9ac958_o.jpg" alt="" phototitle="Buenos Aires." description="Argentina.">}}
-{{< photo full="full/25211878577_642a9ac958_o.jpg" thumb="thumb/26210174608_cf38552e00_o.jpg" alt="" phototitle="Buenos Aires." description="Argentina.">}}
+{{< photo full="full/25211878577_642a9ac958_o.jpg" thumb="thumb/25211878577_642a9ac958_o.jpg" alt="" phototitle="Buenos Aires." description="Argentina.">}}
 {{< photo full="full/25211900067_d316e7416a_o.jpg" thumb="thumb/25211900067_d316e7416a_o.jpg" alt="" phototitle="Buenos Aires." description="Argentina.">}}
 {{< photo full="full/25211886187_f77208ffa8_o.jpg" thumb="thumb/25211886187_f77208ffa8_o.jpg" alt="" phototitle="Buenos Aires." description="Argentina.">}}
 {{< photo full="full/26210274608_f9839deb80_o.jpg" thumb="thumb/26210274608_f9839deb80_o.jpg" alt="" phototitle="Buenos Aires." description="Argentina.">}}
