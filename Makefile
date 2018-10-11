@@ -29,6 +29,14 @@ build:
 clean:
 	@rm -rf $(DIST_DIR)/*
 
+.PHONY: show_import
+show_import:
+	feh -d -.  import/*
+
+.PHONY: clean_import
+clean_import:
+	rm -f $(IMPORT_DIR)/*
+
 .PHONY: deploy
 deploy: clean build
 	cd $(DIST_DIR) && git add --all && git commit -m "Deploying to gh-pages"
