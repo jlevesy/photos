@@ -2,6 +2,7 @@ baseURL = "https://jlevesy.github.io/photos/"
 languageCode = "en-us"
 title = "Photos"
 theme = "phugo"
+googleAnalytics = "UA-127334173-1"
 
 [params]
   name = "Julien Levesy"
@@ -30,3 +31,6 @@ theme = "phugo"
   label = "Github"
   url = "https://github.com/jlevesy"
   icon = "fa-github"
+
+  [params.footer.copyright]
+  name = "Julien Levesy"
