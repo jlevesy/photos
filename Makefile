@@ -1,6 +1,6 @@
 
 DIST_DIR := ./_dist
-IMPORT_DIR := ./import
+IMPORT_DIR ?= ./import
 THUMBS_DIR := ./content/$(ALBUM)/thumb
 FULL_DIR := ./content/$(ALBUM)/full
 
