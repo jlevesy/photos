@@ -1,6 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://jlevesy.github.io/photos/rattrapages/</loc>
+    <lastmod>2018-10-09T11:34:18+02:00</lastmod>
+  </url>
   
   <url>
     <loc>https://jlevesy.github.io/photos/suramerica/</loc>
@@ -14,17 +19,14 @@
   
   <url>
     <loc>https://jlevesy.github.io/photos/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jlevesy.github.io/photos/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jlevesy.github.io/photos/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
