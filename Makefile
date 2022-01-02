@@ -1,6 +1,3 @@
-
-DIST_DIR := ./_dist
-IMPORT_DIR ?= ./import
 THUMBS_DIR := ./content/$(ALBUM)/thumb
 FULL_DIR := ./content/$(ALBUM)/full
 
@@ -21,44 +18,26 @@ FULL_OUTPUTS_JPG := $(patsubst $(IMPORT_DIR)/%.jpg, $(FULL_DIR)/%.$(OUTPUT_FORMA
 dev:
 	@hugo serve
 
-.PHONY: build
-build:
-	@hugo -d $(DIST_DIR)
-
-.PHONY: clean
-clean:
-	@rm -rf $(DIST_DIR)/*
-
-.PHONY: show_import
-show_import:
-	feh -d -.  import/*
-
-.PHONY: clean_import
-clean_import:
-	rm -f $(IMPORT_DIR)/*
-
-.PHONY: deploy
-deploy: clean build
-	cd $(DIST_DIR) && git add --all && git commit -m "Deploying to gh-pages"
-	git push origin gh-pages
-
-.PHONY: setup_worktree
-setup_worktree:
-	git worktree add -B gh-pages $(DIST_DIR) origin/gh-pages
+.PHONY: import
+import: check_variables create_output_dirs album create_photos fill_index
 
 .PHONY: album
-album: check_album_variable
+album:
 	hugo new $(ALBUM)/_index.md
 
-.PHONY: check_input_variable
-check_input_variable:
-	@test $(INPUT)
+.PHONY: fill_index
+fill_index:
+	@for file in $(FULL_DIR)/* ; do \
+		echo "{{< photo full=\"full/$$(basename $${file})\" thumb=\"thumb/$$(basename $${file})\" alt=\"\" phototitle=\".\" description=\".\">}}" >> ./content/$(ALBUM)/_index.md; \
+  done
 
-.PHONY: check_album_variable
-check_album_variable:
+.PHONY: create_photos
+create_photos: $(THUMBS_OUTPUTS_JPG) $(THUMBS_OUTPUTS_PNG) $(FULL_OUTPUTS_JPG) $(FULL_OUTPUTS_PNG)
+
+.PHONY: check_variables
+check_variables:
 	@test $(ALBUM)
-
-import: check_album_variable create_output_dirs $(THUMBS_OUTPUTS_JPG) $(THUMBS_OUTPUTS_PNG) $(FULL_OUTPUTS_JPG) $(FULL_OUTPUTS_PNG)
+	@test $(IMPORT_DIR)
 
 .PHONY: create_output_dirs
 create_output_dirs:
