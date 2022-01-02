@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://jlevesy.github.io/photos/rattrapages/</loc>
-    <lastmod>2018-10-09T11:34:18+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jlevesy.github.io/photos/suramerica/</loc>
-    <lastmod>2018-10-09T11:34:18+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jlevesy.github.io/photos/misc/</loc>
-    <lastmod>2018-10-08T19:01:20+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jlevesy.github.io/photos/categories/</loc>
-  </url>
-  
   <url>
     <loc>https://jlevesy.github.io/photos/</loc>
-  </url>
-  
-  <url>
+    <lastmod>2022-01-02T23:14:57+01:00</lastmod>
+  </url><url>
+    <loc>https://jlevesy.github.io/photos/street/</loc>
+    <lastmod>2022-01-02T23:14:57+01:00</lastmod>
+  </url><url>
+    <loc>https://jlevesy.github.io/photos/rattrapages/</loc>
+    <lastmod>2018-10-09T11:34:18+02:00</lastmod>
+  </url><url>
+    <loc>https://jlevesy.github.io/photos/suramerica/</loc>
+    <lastmod>2018-10-09T11:34:18+02:00</lastmod>
+  </url><url>
+    <loc>https://jlevesy.github.io/photos/misc/</loc>
+    <lastmod>2018-10-08T19:01:20+02:00</lastmod>
+  </url><url>
+    <loc>https://jlevesy.github.io/photos/categories/</loc>
+  </url><url>
     <loc>https://jlevesy.github.io/photos/tags/</loc>
   </url>
-  
 </urlset>
